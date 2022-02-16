@@ -71,7 +71,7 @@ void set_sim_info()
         simslot_count = Trim(simslot_count); // strip newline
         property_override("ro.multisim.simslotcount", simslot_count.c_str());
         if (simslot_count.compare("2") == 0) {
-            property_override("rild.libpath2", "/system/lib/libsec-ril-dsds.so");
+            property_override("vendor.rild.libpath2", "/system/lib/libsec-ril-dsds.so");
             property_override("persist.radio.multisim.config", "dsds");
         }
     }
