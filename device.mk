@@ -116,7 +116,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0
 
 PRODUCT_COPY_FILES += \
-    device/samsung/universal7580-common/configs/init/rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rild.legacy.rc
+    device/samsung/universal7580-common/configs/init/rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rild.rc
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
